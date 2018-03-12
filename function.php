@@ -5,13 +5,9 @@
 function show()
 {
     $number = $_GET['number'];
-
-    $random = rand(0,10);
-    echo $random. "<hr>";
-
     for($i = 0; $i < $number; $i++) {
         $word = word();
-        echo "Word is: " . $word."<br>";
+        echo $word." ";
 
     }
 

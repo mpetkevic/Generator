@@ -1,6 +1,6 @@
 <?php
 require_once 'function.php';
-show();
+
 ?>
 
 <!doctype html>
@@ -20,6 +20,7 @@ show();
                 <input type="text" name="number" placeholder="Enter number">
                 <input type="submit" name="submit" value="submit">
             </form>
+            <?php show() ?>
         </div>
     </div>
 </div>
