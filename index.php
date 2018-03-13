@@ -20,7 +20,14 @@ require_once 'function.php';
                 <input type="text" name="number" placeholder="Enter number">
                 <input type="submit" name="submit" value="submit">
             </form>
-            <?php show() ?>
+            <?php
+            if(!empty($_GET)) {
+                show();
+            } else {
+                echo "Please enter number";
+            }
+
+            ?>
         </div>
     </div>
 </div>
