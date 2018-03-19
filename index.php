@@ -20,14 +20,21 @@ require_once 'function.php';
                 <input type="text" name="number" placeholder="Enter number">
                 <input type="submit" name="submit" value="submit">
             </form>
-            <?php
-            if(!empty($_GET)) {
-                show();
-            } else {
-                echo "Please enter number";
-            }
+            <p>
+                <?php
+                $number = (int)$_GET['number'];
+                if(!empty($_GET['number'])) {
+                    if($number !== 0) {
+                        show();
+                    } else {
+                        echo "Is not a number. Please enter number";
+                    }
+                } else {
+                    echo "Please enter number";
+                }
 
-            ?>
+                ?>
+            </p>
         </div>
     </div>
 </div>
